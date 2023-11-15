@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isro Centers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/icon" href="./assets/images/logo.png">
+</head>
+
+<body>
+
+    <nav class="navBar">
+        <div class="logo">
+            <img src="./assets/images/logo.png" class="isroLogo" alt="isro-logo">
+        </div>
+        <div class="navBarList">
+            <ul class="list">
+                <li><a href="./index.html">Home</a></li>
+                <li>Contact us</li>
+                <li><a href="https://en.wikipedia.org/wiki/ISRO" target="_blank">About</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="name">
+        <h1 class="heading">Indian Space Research Organisation</h1>
+    </div>
+
+    <section class="main">
+        <div class="searchBar">
+            <form>
+                <div class="search">
+                    <div class="input-button">
+                        <input type="text" id="search" placeholder="Type here..." />
+                    </div>
+
+                    <div class="button">
+                        <button type="submit">Refresh</button>
+                        <button type="button" id="city" onclick="cityButtonn()">City</button>
+                        <button type="button" id="state" onclick="stateButton()">State</button>
+                        <button type="button" id="name" onclick="centerButton()">Center</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="loader">
+            <span class="loader" id="loadingSpan"></span>
+        </div>
+
+        <div class="userCards">
+            <table id="isroCenters" class="table">
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>
+            <h4 class="copyright">&copy; Copyright:ISRO Centres</h4>
+        </div>
+        <div>
+            <ul class="footerList">
+                <li><img src="./assets/images/fb-logo.png" alt="facebook" class="footerLogo" /></li>
+                <li><img src="./assets/images/instagram-logo.png" alt="instagram" class="footerLogo" /></li>
+                <li><img src="./assets/images/whatsapp-logo.png" alt="whatsapp" class="footerLogo" /></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
